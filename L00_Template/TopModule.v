@@ -12,7 +12,7 @@ module TopModule(
     ////////// Push Button //////////
     input   [1:0]       BTN,
     ////////// LED //////////
-    input   [9:0]       LED,
+    output   [9:0]       LED,
     ////////// SW //////////
     input   [9:0]       SW
     );
