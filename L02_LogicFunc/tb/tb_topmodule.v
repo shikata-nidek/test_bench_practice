@@ -16,14 +16,15 @@ module tb_topmodule();
         CLK2 = 0;
         BTN = 2'b11;
         SW = 10'h0;
-        LED = 10'h0;
+        //LED = 10'h0;
 
-        HEX0 = 8'hff;
+        /*HEX0 = 8'hff;
         HEX1 = 8'hff;
         HEX2 = 8'hff;
         HEX3 = 8'hff;
         HEX4 = 8'hff;
         HEX5 = 8'hff;
+        */
     end
 
     initial begin

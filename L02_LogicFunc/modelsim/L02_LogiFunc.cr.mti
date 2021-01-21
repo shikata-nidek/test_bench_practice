@@ -1,0 +1,25 @@
+D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v {0 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_topmodule
+** Error: D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v(19): (vlog-2110) Illegal reference to net "LED".
+** Error: D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v(21): (vlog-2110) Illegal reference to net "HEX0".
+** Error: D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v(22): (vlog-2110) Illegal reference to net "HEX1".
+** Error: D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v(23): (vlog-2110) Illegal reference to net "HEX2".
+** Error: D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v(24): (vlog-2110) Illegal reference to net "HEX3".
+** Error: D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v(25): (vlog-2110) Illegal reference to net "HEX4".
+** Error: D:/research/VScode/test_bench_practice/L02_LogicFunc/tb/tb_topmodule.v(26): (vlog-2110) Illegal reference to net "HEX5".
+
+} {4.0 11.0} {}} D:/research/VScode/test_bench_practice/L02_LogicFunc/src/LogicFunc.v {1 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L02_LogicFunc/src/LogicFunc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module m_and
+-- Compiling module m_or
+-- Compiling module m_not
+-- Compiling module m_xor
+
+Top level modules:
+	m_and
+	m_or
+	m_not
+	m_xor
+
+} {} {}}
