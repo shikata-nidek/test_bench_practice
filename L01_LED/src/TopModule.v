@@ -1,4 +1,4 @@
-module TopModule(input sw, output led)
+module TopModule(input sw, output led);
 
     assign led = sw;
 
