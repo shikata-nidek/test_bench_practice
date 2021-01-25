@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vm_selector
+Z0 !s110 1611560693
+!i10b 1
+!s100 lJ_?@D;^^d^cn4=T?<IbY3
+I<_Ahb[WEO98dcSAneVM6m3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/modelsim
+Z3 w1611558070
+8C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/Selector.v
+FC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/Selector.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1611560693.000000
+!s107 C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/Selector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/Selector.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtb_topmodule
+R0
+!i10b 1
+!s100 TEz1hDY8LG<=7^c=OaKl`1
+IC>f55ZQ8hZ[XNmB@M[gNj0
+R1
+R2
+w1611560511
+8C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/tb/tb_topmodule.v
+FC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/tb/tb_topmodule.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/tb/tb_topmodule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/tb/tb_topmodule.v|
+!i113 1
+R6
+R7
+vTopModule
+R0
+!i10b 1
+!s100 bN]``eeZ:?ofRimHDVF_U3
+IT=GQS95mcFj2Pd?`ROXQ]2
+R1
+R2
+R3
+8C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/TopModule.v
+FC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/TopModule.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/TopModule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/src/TopModule.v|
+!i113 1
+R6
+R7
+n@top@module
