@@ -18,10 +18,3 @@ module tb_topmodule();
         SW <= 10'h0;
         #5;
     end
-
-    always begin
-        BTN[0] <= 1;
-        #10 
-        
-        
-        

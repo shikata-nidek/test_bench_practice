@@ -1,0 +1,149 @@
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_topmodule
+# vsim -gui work.tb_topmodule 
+# Start time: 14:55:20 on Jan 26,2021
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+add wave -position end  sim:/tb_topmodule/BTN
+add wave -position end  sim:/tb_topmodule/LED
+restart
+run
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_topmodule
+# End time: 14:58:39 on Jan 26,2021, Elapsed time: 0:03:19
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_topmodule 
+# Start time: 14:58:39 on Jan 26,2021
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+add wave -position end  sim:/tb_topmodule/BTN
+add wave -position end  sim:/tb_topmodule/LED
+restart
+run
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+vsim -gui work.tb_topmodule
+# End time: 15:18:59 on Jan 26,2021, Elapsed time: 0:20:20
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_topmodule 
+# Start time: 15:18:59 on Jan 26,2021
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+add wave -position end  sim:/tb_topmodule/BTN
+add wave -position end  sim:/tb_topmodule/LED
+run
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_topmodule
+# End time: 15:20:09 on Jan 26,2021, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_topmodule 
+# Start time: 15:20:09 on Jan 26,2021
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+add wave -position end  sim:/tb_topmodule/BTN
+run
+add wave -position end  sim:/tb_topmodule/LED
+restart
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_topmodule
+# End time: 15:22:18 on Jan 26,2021, Elapsed time: 0:02:09
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_topmodule 
+# Start time: 15:22:18 on Jan 26,2021
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+add wave -position end  sim:/tb_topmodule/BTN
+run
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Load canceled
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+add wave -position end  sim:/tb_topmodule/LED
+restart
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+# Compile of RS_FlipFlop.v was successful.
+# Compile of TopModule.v was successful.
+# Compile of tb_topmodule04.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+# soko 1
+# soko 1
+# koko

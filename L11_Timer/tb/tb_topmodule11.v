@@ -12,16 +12,13 @@ module tb_topmodule();
     TopModule topmodule(.*);
 
     initial begin
-        CLK1 <= 0;
-        CLK2 <= 0;
-        BTN <= 2'b11;
-        SW <= 10'h0;
-        #5;
+        CLK1 = 0;
+        CLK2 = 0;
+        BTN = 2'b11;
+        SW = 10'h0;
     end
 
-    always begin
-        BTN[0] <= 1;
-        #10 
-        
-        
-        
+    always #10
+        CLK1 = ~CLK1;
+    
+endmodule
