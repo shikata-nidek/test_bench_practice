@@ -37,7 +37,7 @@ module TopModule(
 			((SW[9]==1) && (SW[8]==0)) ? wq2 :	wq3;
 
 	assign rst = SW[7];		
-	assign LED={SW[9],SW[8],SW[7],4'h0,wq};
+	assign LED={7'h0,wq};
 	assign HEX0=8'hff;
 	assign HEX1=8'hff;
 	assign HEX2=8'hff;
