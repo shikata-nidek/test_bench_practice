@@ -11,17 +11,33 @@ module tb_topmodule();
 
     TopModule topmodule(.*);
 
+    task push_buttoni(input i);
+    begin
+            BTN[i] = ~BTN[i];
+        #1  BTN[i] = ~BTN[i];
+    end
+    endtask
+
     initial begin
         CLK1 <= 0;
         CLK2 <= 0;
         BTN <= 2'b11;
         SW <= 10'h0;
-        #5;
+        force topmodule.u2.ff = 1'b0;
+        #1;
+        release topmodule.u2.ff;
+
+        push_buttoni(0);
+        push_buttoni(1);
+        push_buttoni(0);
+        push_buttoni(1);
+        push_buttoni(0);
+        push_buttoni(1);
     end
 
-    always begin
-        BTN[0] <= 1;
-        #10 
+endmodule
+
+
         
         
         

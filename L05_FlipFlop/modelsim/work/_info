@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/research/VScode/test_bench_practice/L04_RS_FlipFlop/modelsim
+vm_flipflop
+Z0 !s110 1611710187
+!i10b 1
+!s100 jGc43<JN@a@BZ^V;dc7Om0
+I9][2]PgcPC?8Me?ZFDeCZ3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/research/VScode/test_bench_practice/L05_FlipFlop/modelsim
+Z3 w1611618885
+Z4 8D:/research/VScode/test_bench_practice/L05_FlipFlop/src/FlipFlop.v
+Z5 FD:/research/VScode/test_bench_practice/L05_FlipFlop/src/FlipFlop.v
+L0 8
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1611710187.000000
+Z8 !s107 D:/research/VScode/test_bench_practice/L05_FlipFlop/src/FlipFlop.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L05_FlipFlop/src/FlipFlop.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vm_rs_flipflop
+R0
+!i10b 1
+!s100 im8ff=5TD@=z5@H1:Y5ol2
+I:SoN6F1W5aS6=a@dhS_bO0
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_topmodule
+R0
+!i10b 1
+!s100 Xb`e8o1aDn@Q0j_U`zX8V1
+IdoAYK2FK`8S?JV;85HPz_2
+R1
+R2
+w1611710173
+8D:/research/VScode/test_bench_practice/L05_FlipFlop/tb/tb_topmodule.v
+FD:/research/VScode/test_bench_practice/L05_FlipFlop/tb/tb_topmodule.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/research/VScode/test_bench_practice/L05_FlipFlop/tb/tb_topmodule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L05_FlipFlop/tb/tb_topmodule.v|
+!i113 1
+R10
+R11
+vTopModule
+R0
+!i10b 1
+!s100 Yj;nb<6=UUQRJ=o>=aN2_0
+IPaahEoQ6UlJX`gYgHiOZY1
+R1
+R2
+w1611619055
+8D:/research/VScode/test_bench_practice/L05_FlipFlop/src/TopModule.v
+FD:/research/VScode/test_bench_practice/L05_FlipFlop/src/TopModule.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/research/VScode/test_bench_practice/L05_FlipFlop/src/TopModule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L05_FlipFlop/src/TopModule.v|
+!i113 1
+R10
+R11
+n@top@module

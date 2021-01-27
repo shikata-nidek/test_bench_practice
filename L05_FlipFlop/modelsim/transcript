@@ -1,0 +1,31 @@
+# Compile of TopModule.v was successful.
+# Compile of FlipFlop.v was successful.
+# Compile of tb_topmodule.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of TopModule.v was successful.
+# Compile of FlipFlop.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_topmodule
+# vsim -gui work.tb_topmodule 
+# Start time: 08:58:22 on Jan 27,2021
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+# Loading work.m_flipflop
+add wave -position end  sim:/tb_topmodule/BTN
+add wave -position end  sim:/tb_topmodule/LED
+run
+# Compile of TopModule.v was successful.
+# Compile of FlipFlop.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_rs_flipflop
+# Loading work.m_flipflop
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 

@@ -5,6 +5,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	m_rs_flipflop
 
+} {} {}} D:/research/VScode/test_bench_practice/L04_RS_FlipFlop/tb/tb_topmodule04.v {1 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L04_RS_FlipFlop/tb/tb_topmodule04.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_topmodule
+
+Top level modules:
+	tb_topmodule
+
 } {} {}} D:/research/VScode/test_bench_practice/L04_RS_FlipFlop/src/TopModule.v {1 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L04_RS_FlipFlop/src/TopModule.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TopModule
