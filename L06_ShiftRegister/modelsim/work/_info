@@ -1,0 +1,183 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/research/VScode/test_bench_practice/L05_FlipFlop/modelsim
+vm_dff
+Z0 !s110 1611803522
+!i10b 1
+!s100 [lXc2o`Z?^JCC>n8?IEV@2
+I1hg<0R7TU61k<134o4OUd3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/research/VScode/test_bench_practice/L06_ShiftRegister/modelsim
+Z3 w1611723657
+Z4 8D:/research/VScode/test_bench_practice/L06_ShiftRegister/src/ShiftRegister.v
+Z5 FD:/research/VScode/test_bench_practice/L06_ShiftRegister/src/ShiftRegister.v
+L0 40
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1611803522.000000
+Z8 !s107 D:/research/VScode/test_bench_practice/L06_ShiftRegister/src/ShiftRegister.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L06_ShiftRegister/src/ShiftRegister.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vm_rs_flipflop
+R0
+!i10b 1
+!s100 ?aP1f53U_d6eGYW>_j=@a1
+IGIMVGg^c@]b^BUo[>K<6K3
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vm_Shiftreg0
+R0
+!i10b 1
+!s100 ZH^ObNW3[PS3dH2`5EUWA0
+IHeW=g`BoaQf5KXD2XF42m2
+R1
+R2
+R3
+R4
+R5
+L0 6
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nm_@shiftreg0
+vm_Shiftreg1
+R0
+!i10b 1
+!s100 V9K8[H[bCcBI_K@jJYI9n2
+Ih2obMHd<C0ddg97`GlMJL2
+R1
+R2
+R3
+R4
+R5
+L0 23
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nm_@shiftreg1
+vm_Shiftreg2
+R0
+!i10b 1
+!s100 aaH@Aff3<R1aOg`_IDfS93
+I;FE7e<7YBcF[XKg=`OfeY0
+R1
+R2
+R3
+R4
+R5
+L0 53
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nm_@shiftreg2
+vm_Shiftreg3
+R0
+!i10b 1
+!s100 M6hJ6aRI``83Z_OBcO9fH1
+I?2n=243Wz6>kJIc=U^D[^0
+R1
+R2
+R3
+R4
+R5
+L0 63
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nm_@shiftreg3
+vtb_topmodule
+!s110 1611803523
+!i10b 1
+!s100 z1a>SK52IZ_NHUmV]VOk83
+I1Z930PYoH<KgimL:Xd=i[2
+R1
+R2
+w1611803518
+8D:/research/VScode/test_bench_practice/L06_ShiftRegister/tb/tb_topmodule06.v
+FD:/research/VScode/test_bench_practice/L06_ShiftRegister/tb/tb_topmodule06.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1611803523.000000
+!s107 D:/research/VScode/test_bench_practice/L06_ShiftRegister/tb/tb_topmodule06.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L06_ShiftRegister/tb/tb_topmodule06.v|
+!i113 1
+R10
+R11
+vTopModule
+R0
+!i10b 1
+!s100 Zd`DJ4oSEGO61XN:G_Wi42
+In>W[K;YKmVV3eT57iXeK[1
+R1
+R2
+w1611727936
+8D:/research/VScode/test_bench_practice/L06_ShiftRegister/src/TopModule.v
+FD:/research/VScode/test_bench_practice/L06_ShiftRegister/src/TopModule.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/research/VScode/test_bench_practice/L06_ShiftRegister/src/TopModule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L06_ShiftRegister/src/TopModule.v|
+!i113 1
+R10
+R11
+n@top@module

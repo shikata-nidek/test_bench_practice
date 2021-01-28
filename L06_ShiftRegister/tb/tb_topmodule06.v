@@ -11,10 +11,20 @@ module tb_topmodule();
 
     TopModule topmodule(.*);
 
-    task pushbuttoni_3times(input i);
+    task pushbuttoni(input i);
     begin
-            BTN[i] = ~BTN[i];
-        #1  BTN[i] = ~BTN[i];
+                BTN[i] = ~BTN[i];
+            #1  BTN[i] = ~BTN[i];
+            #1;
+    end
+    endtask
+
+    task pushbutton_3times();
+    begin
+        repeat(3) begin
+            pushbuttoni(0);
+            pushbuttoni(1);
+        end
     end
     endtask
 
@@ -28,7 +38,19 @@ module tb_topmodule();
         #1;
         SW[7] <= 1'b0;
         #1;
-
-
-
+        SW[0] <= 1'b1;
+        #1;
+        pushbutton_3times();
+        SW[0] <= 1'b0;
+        #1;
+        pushbutton_3times();
+        SW[8] <= 1'b1;
+        SW[0] <= 1'b1;
+        #1;
+        pushbutton_3times();
+        SW[0] <= 1'b0;
+        #1;
+        pushbutton_3times();
     end
+
+endmodule
