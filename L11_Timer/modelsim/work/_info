@@ -1,0 +1,116 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/research/VScode/test_bench_practice/L02_LogicFunc/modelsim
+vm_prescale100
+Z0 !s110 1611627035
+!i10b 1
+!s100 UXbe5T@hTYU:mOm<Y]@mm0
+I[lG>LIK5SUOPRf6EW^F3]0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/research/VScode/test_bench_practice/L11_Timer/modelsim
+Z3 w1548320242
+Z4 8D:/research/VScode/test_bench_practice/L11_Timer/src/Timer.v
+Z5 FD:/research/VScode/test_bench_practice/L11_Timer/src/Timer.v
+L0 19
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1611627035.000000
+Z8 !s107 D:/research/VScode/test_bench_practice/L11_Timer/src/Timer.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L11_Timer/src/Timer.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vm_prescale50000
+R0
+!i10b 1
+!s100 >5[ZKhIAFgNJ5WEf?he_63
+I`kFNOVnJ=PIzB_AdCG4d03
+R1
+R2
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vm_timer
+R0
+!i10b 1
+!s100 dNgEGmooHnOem4GhS^::>3
+InEeR>EFV[kgl^jI?BgN`81
+R1
+R2
+R3
+R4
+R5
+L0 37
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_topmodule
+R0
+!i10b 1
+!s100 9az`Kjl[5Xj<cL]>42^JV2
+Ih`ANYnHQ0_8N74IPgBmae3
+R1
+R2
+w1611627030
+8D:/research/VScode/test_bench_practice/L11_Timer/tb/tb_topmodule11.v
+FD:/research/VScode/test_bench_practice/L11_Timer/tb/tb_topmodule11.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/research/VScode/test_bench_practice/L11_Timer/tb/tb_topmodule11.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L11_Timer/tb/tb_topmodule11.v|
+!i113 1
+R10
+R11
+vTopModule
+R0
+!i10b 1
+!s100 Fbhb8TiWoT;K0;Xh3AHbG1
+I@6g9Z=_gJzV3oQ>5a`9FT1
+R1
+R2
+w1548318686
+8D:/research/VScode/test_bench_practice/L11_Timer/src/TopModule.v
+FD:/research/VScode/test_bench_practice/L11_Timer/src/TopModule.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/research/VScode/test_bench_practice/L11_Timer/src/TopModule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L11_Timer/src/TopModule.v|
+!i113 1
+R10
+R11
+n@top@module
