@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L03_Selector/modelsim
+vm_dec_counter
+Z0 !s110 1612165671
+!i10b 1
+!s100 UVaI1MV^W[8>=Mbzk1J=P2
+ImQ_o=IHnMi0j:LXLUIPin1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/modelsim
+Z3 w1612165666
+Z4 8C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/DecCounter.v
+Z5 FC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/DecCounter.v
+L0 7
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1612165670.000000
+Z8 !s107 C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/DecCounter.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/DecCounter.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vm_rs_flipflop
+R0
+!i10b 1
+!s100 ?aP1f53U_d6eGYW>_j=@a1
+IRc8bIN]mRWeRj>hS8KXnh3
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_topmodule
+R0
+!i10b 1
+!s100 TZBbQMl@^OelVlEB6lU493
+IQ8PGU=OGCXz_?5kAboY=@3
+R1
+R2
+w1612165482
+8C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/tb/tb_topmodule.v
+FC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/tb/tb_topmodule.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1612165671.000000
+!s107 C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/tb/tb_topmodule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/tb/tb_topmodule.v|
+!i113 1
+R10
+R11
+vTopModule
+!s110 1612165670
+!i10b 1
+!s100 5`SDX5ffaYO8N0MI<@;?T1
+If_ccAJPS9oU;[<=jAIT9M0
+R1
+R2
+w1612165279
+8C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/TopModule.v
+FC:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/TopModule.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/TopModule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/shoot/Desktop/work/VScode/test_bench_practice/L07_DecCounter/src/TopModule.v|
+!i113 1
+R10
+R11
+n@top@module

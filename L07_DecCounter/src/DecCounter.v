@@ -4,11 +4,14 @@ module m_rs_flipflop(input set,input reset,output q,output nq);
 endmodule
 
 
-module m_dec_counter(input clk,output [3:0] q);
+module m_dec_counter(input clk,input rst,output [3:0] q);
 	reg [3:0] counter;
 	
-	always @(posedge clk) begin
+	always @(posedge clk or posedge rst) begin
 		if(counter==4'h9) begin
+			counter=0;
+		end
+		else if(rst) begin
 			counter=0;
 		end
 		else begin

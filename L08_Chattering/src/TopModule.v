@@ -23,7 +23,7 @@ module TopModule(
 	wire clk;		//KEY0は、押された時に0になるので、カウンタ用に論理を反転
 	assign clk=~button;
 	m_chattering u0(CLK1,BTN[0],button);
-	m_dec_counter u1(clk,wq);
+	m_dec_counter u1(clk,SW[9],wq);
 	assign LED={6'h0,wq};
 	assign HEX0=8'hff;
 	assign HEX1=8'hff;

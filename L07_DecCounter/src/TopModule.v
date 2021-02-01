@@ -21,7 +21,7 @@ module TopModule(
 	wire [3:0] wq;
 	
 	m_rs_flipflop u1(BTN[0],BTN[1],clk,wnq);
-	m_dec_counter(clk,wq);
+	m_dec_counter(clk,SW[9],wq);
 	assign LED={6'h0,wq};
 	assign HEX0=8'hff;
 	assign HEX1=8'hff;
