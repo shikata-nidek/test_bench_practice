@@ -22,12 +22,12 @@ module m_dec_counter(input clk,input rst,output [3:0] q);
 	reg [3:0] counter;
 	
 	always @(posedge clk or posedge rst) begin
-		if(rst)
+		if(counter==4'h9 || rst) begin
 			counter=0;
-		else if(counter==4'h9)
-			counter=0;
-		else
+		end
+		else begin
 			counter=counter+1;
+		end
 	end
 	
 	assign q=counter;
