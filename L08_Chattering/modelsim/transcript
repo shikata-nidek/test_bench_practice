@@ -1,0 +1,95 @@
+# Compile of TopModule.v was successful.
+# Compile of Chattering.v was successful.
+# Compile of tb_topmodule.v failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of TopModule.v was successful.
+# Compile of Chattering.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_topmodule
+# vsim -gui work.tb_topmodule 
+# Start time: 08:45:59 on Feb 03,2021
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_chattering
+# Loading work.m_dec_counter
+add wave -position end  sim:/tb_topmodule/CLK1
+add wave -position end  sim:/tb_topmodule/BTN
+add wave -position end  sim:/tb_topmodule/SW
+add wave -position end  sim:/tb_topmodule/LED
+run
+# Compile of TopModule.v was successful.
+# Compile of Chattering.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_chattering
+# Loading work.m_dec_counter
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+restart
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+# Compile of TopModule.v was successful.
+# Compile of Chattering.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of TopModule.v was successful.
+# Compile of Chattering.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_chattering
+# Loading work.m_dec_counter
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+add wave -position end sim:/tb_topmodule/topmodule/u0/*
+restart
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+# Compile of TopModule.v was successful.
+# Compile of Chattering.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_chattering
+# Loading work.m_dec_counter
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+add wave -position end sim:/tb_topmodule/topmodule/u1/*
+restart
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 
+add wave -position end sim:/tb_topmodule/topmodule/#ASSIGN#24/*
+# (vish-4014) No objects found matching '/tb_topmodule/topmodule/#ASSIGN#24/*'.
+# Compile of TopModule.v was successful.
+# Compile of Chattering.v was successful.
+# Compile of tb_topmodule.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_topmodule
+# Loading work.TopModule
+# Loading work.m_chattering
+# Loading work.m_dec_counter
+run
+# GetModuleFileName: 指定されたモジュールが見つかりません。
+# 
+# 

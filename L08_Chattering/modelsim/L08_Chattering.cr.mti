@@ -1,0 +1,17 @@
+D:/research/VScode/test_bench_practice/L08_Chattering/src/Chattering.v {1 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L08_Chattering/src/Chattering.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module m_chattering
+-- Compiling module m_dec_counter
+
+Top level modules:
+	m_chattering
+	m_dec_counter
+
+} {} {}} D:/research/VScode/test_bench_practice/L08_Chattering/src/TopModule.v {1 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L08_Chattering/src/TopModule.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TopModule
+
+Top level modules:
+	TopModule
+
+} {} {}}
