@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/research/VScode/test_bench_practice/L06_ShiftRegister/modelsim
+vm_chattering
+Z0 !s110 1612311435
+!i10b 1
+!s100 5Q@^kHnRCg2@LG`T:e3N20
+I8TeoMN^8:F5fhZadYCjB@0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/research/VScode/test_bench_practice/L08_Chattering/modelsim
+Z3 w1612310908
+Z4 8D:/research/VScode/test_bench_practice/L08_Chattering/src/Chattering.v
+Z5 FD:/research/VScode/test_bench_practice/L08_Chattering/src/Chattering.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1612311435.000000
+Z8 !s107 D:/research/VScode/test_bench_practice/L08_Chattering/src/Chattering.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L08_Chattering/src/Chattering.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vm_dec_counter
+R0
+!i10b 1
+!s100 kYXAc8GcChmW^oWHg5LaW3
+IlJX;bHkY7IZ@C0DQZ]NVU3
+R1
+R2
+R3
+R4
+R5
+L0 24
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_topmodule
+R0
+!i10b 1
+!s100 RoEX9E=IYXRU^Na2Oa]>i1
+IUm[TT7_=3Hd3hnH1RPP3V0
+R1
+R2
+w1612311431
+8D:/research/VScode/test_bench_practice/L08_Chattering/tb/tb_topmodule.v
+FD:/research/VScode/test_bench_practice/L08_Chattering/tb/tb_topmodule.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/research/VScode/test_bench_practice/L08_Chattering/tb/tb_topmodule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L08_Chattering/tb/tb_topmodule.v|
+!i113 1
+R10
+R11
+vTopModule
+R0
+!i10b 1
+!s100 OZKoQXg:CM]Pmc5?Fc^JH1
+IeFiY:XoLg68[EE>C5T2zQ2
+R1
+R2
+w1612310919
+8D:/research/VScode/test_bench_practice/L08_Chattering/src/TopModule.v
+FD:/research/VScode/test_bench_practice/L08_Chattering/src/TopModule.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/research/VScode/test_bench_practice/L08_Chattering/src/TopModule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/research/VScode/test_bench_practice/L08_Chattering/src/TopModule.v|
+!i113 1
+R10
+R11
+n@top@module

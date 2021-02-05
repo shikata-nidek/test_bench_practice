@@ -14,14 +14,37 @@ module tb_topmodule();
     task pushbuttoni(input i);
     begin
                 BTN[i] = ~BTN[i];
-            #1  BTN[i] = ~BTN[i];
-            #1;
+
+            #10000000  BTN[i] = ~BTN[i];
+            #10000000;
+    end
+    endtask
+
+    task switchi_onoff(input j);
+    begin
+            SW[j] = ~SW[j];
+        #1  SW[j] = ~SW[j];
+        #1;
+
     end
     endtask
 
     initial begin
-        CLK1 <= 0;
-        CLK2 <= 0;
-        BTN <= 2'b11;
-        SW <= 10'h0;
+        CLK1 = 0;
+        CLK2 = 0;
+        BTN = 2'b11;
+        SW = 10'h0;
         #1;
+        SW[9] = ~SW[9];
+        #1;
+        SW[9] = ~SW[9];  // reset
+        #10000000;
+        repeat(10) begin
+            pushbuttoni(0);
+        end
+    end
+
+    always #20
+        CLK1 = ~CLK1;
+
+endmodule

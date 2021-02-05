@@ -1,4 +1,4 @@
-module m_chattering(input clk,input sw_in,output sw_out);
+module m_chattering(input clk,input sw_in,input rst,output sw_out);
 	reg [15:0] cnt;	//16bit counter
 	reg swreg;			//Switch Latch
 	wire iclk;			//1/65536 clock
@@ -6,8 +6,11 @@ module m_chattering(input clk,input sw_in,output sw_out);
 	assign sw_out=swreg;
 	
 	//16bit Counter
-	always @(posedge clk) begin
-		cnt=cnt+1;
+	always @(posedge clk or posedge rst) begin
+		if(rst)
+			cnt=16'h0;
+		else
+			cnt=cnt+1;
 	end
 	assign iclk=cnt[15];	//clock for chattering inhibit
 	
@@ -22,15 +25,14 @@ module m_dec_counter(input clk,input rst,output [3:0] q);
 	reg [3:0] counter;
 	
 	always @(posedge clk or posedge rst) begin
-		if(counter==4'h9) begin
+
+		if(rst)
 			counter=0;
-		end
-		else if(rst) begin
+		else if(counter==4'h9)
 			counter=0;
-		end
-		else begin
+		else
+
 			counter=counter+1;
-		end
 	end
 	
 	assign q=counter;

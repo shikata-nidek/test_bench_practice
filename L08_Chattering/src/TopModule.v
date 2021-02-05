@@ -22,9 +22,15 @@ module TopModule(
 	wire [3:0] wq;	//10進カウンタの出力データ
 	wire clk;		//KEY0は、押された時に0になるので、カウンタ用に論理を反転
 	assign clk=~button;
+<<<<<<< HEAD
 	m_chattering u0(CLK1,BTN[0],button);
 	m_dec_counter u1(clk,SW[9],wq);
 	assign LED={6'h0,wq};
+=======
+	m_chattering u0(CLK1,BTN[0],SW[9],button);
+	m_dec_counter u1(clk,SW[9],wq);
+	assign LED={SW[9],5'h0,wq};
+>>>>>>> c0841189f8d143ef02dc6b29564e091185545e56
 	assign HEX0=8'hff;
 	assign HEX1=8'hff;
 	assign HEX2=8'hff;
