@@ -56,11 +56,50 @@ module tb_topmodule;
         end
 
         `TEST_CASE("test1_sw_and_change_number") begin
-            
+            // increment
+            t_increment_sw();
+            // decrement
+            t_decrement_sw();
+            // shift
+            for(int i=0; i<5; i++) begin
+                `CHECK_EQUAL(HEX0, HEX0_DATA);
+                SW[3:0] = {SW[2:0], 1'b1};
+            end
+            // shift
+            for(int i=0; i<5; i++) begin
+                `CHECK_EQUAL(HEX0, HEX0_DATA);
+                SW[3:0] = {SW[2:0], 1'b0};
+            end
+            // 55AA
+            for(int i=0; i<5; i++) begin
+                SW[3:0] = 4'b0101;
+                `CHECK_EQUAL(HEX0, HEX0_DATA);
+                SW[3:0] = 4'b1010;
+                `CHECK_EQUAL(HEX0, HEX0_DATA);
+            end
+        end
+
+        `TEST_CASE("test2_sw_without_change") begin
+            for(int i=0; i<4; i++) begin
+                BTN = i;
+                // increment
+                t_increment_sw();
+            end
+        end
+
+        `TEST_CASE("test3_btn_without_change") begin
+            for(int i=0; i<64; i++) begin
+                SW[9:4] = i;
+                SW[3:0] = 4'h0;
+                // increment
+                t_increment_sw();
+            end
         end
 
 
     end
+
+    `WATCHDOG(100ms);
 
     initial begin:  gen_CLK1
         CLK1 = 1'b0;
@@ -84,5 +123,12 @@ module tb_topmodule;
 
     task t_decrement_sw;
     begin
-        for(int i=)
+        for(int i=L_MAX_SW_COUNT; i>=0; i--) begin
+            SW[3:0] = i;
+            repeat(1) @(posedge CLK1);
+            `CHECK_EQUAL(HEX0, HEX0_DATA);
+        end
     end
+    endtask
+
+endmodule

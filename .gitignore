@@ -2,3 +2,4 @@
 **/syn/incremental_db
 **/syn/output_files
 *.qws
+vunit_out
