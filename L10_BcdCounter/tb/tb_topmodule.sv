@@ -42,3 +42,13 @@ module tb_topmodule;
     assign HEX0_DATA[7:0] = HEX_DATA(SW[3:0]);
 
     
+    `TEST_SUITE begin
+
+        `TEST_SUITE_SETUP begin
+            BTN = 2'b11;
+            SW = 10'b0;
+            repeat(10) @(posedge CLK1);
+            $display("Running test suite setup code");
+        end
+
+        end
