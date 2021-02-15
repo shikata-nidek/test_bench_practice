@@ -40,3 +40,5 @@ module tb_topmodule;
     end
     endfunction
     assign HEX0_DATA[7:0] = HEX_DATA(SW[3:0]);
+
+    
