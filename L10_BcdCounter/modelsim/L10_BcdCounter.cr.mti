@@ -1,0 +1,30 @@
+D:/research/VScode/test_bench_practice/L10_BcdCounter/src/BcdCounter.v {1 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L10_BcdCounter/src/BcdCounter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module m_dec_counter2
+-- Compiling module m_bcd_counter
+-- Compiling module m_seven_segment
+-- Compiling module m_chattering
+
+Top level modules:
+	m_bcd_counter
+	m_seven_segment
+	m_chattering
+
+} {} {}} D:/research/VScode/test_bench_practice/L10_BcdCounter/src/TopModule.v {1 {vlog -work work -stats=none D:/research/VScode/test_bench_practice/L10_BcdCounter/src/TopModule.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TopModule
+
+Top level modules:
+	TopModule
+
+} {} {}} D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv {0 {vlog -work work -sv -stats=none D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Error: D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv(1): Cannot open `include file "vunit_defines.svh".
+-- Compiling module tb_topmodule
+** Error: D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv(21): (vlog-2163) Macro `TEST_SUITE is undefined.
+** Error: D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv(23): (vlog-2163) Macro `TEST_SUITE_SETUP is undefined.
+** Error (suppressible): D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv(23): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+** Error: (vlog-13069) D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv(24): near "=": syntax error, unexpected '='.
+** Error: D:/research/VScode/test_bench_practice/L10_BcdCounter/tb/tb_topmodule.sv(24): (vlog-13205) Syntax error found in the scope following 'BTN'. Is there a missing '::'?
+
+} {3.0 4.0 5.0 7.0 8.0 10.0} {}}

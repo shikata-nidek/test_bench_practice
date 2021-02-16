@@ -26,7 +26,7 @@ module TopModule(
 	wire [7:0] seg1;
 	
 	assign clk=~button;
-	m_chattering u0(CLK1,BTN[0],button);
+	m_chattering u0(CLK1,BTN[0],BTN[1],button);
 	m_bcd_counter u1(clk,BTN[1],wq);
 	m_seven_segment u2(wq[3:0],seg0);
 	m_seven_segment u3(wq[7:4],seg1);

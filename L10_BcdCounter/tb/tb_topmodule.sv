@@ -3,6 +3,9 @@
 
 module tb_topmodule;
 
+    parameter int P_CLK_PERIOD = 20; // 50MHz
+    parameter int P_ICLK_COUNT = 2**16;
+
     //  input
     logic CLK1, CLK2;
     logic [1:0] BTN;
@@ -11,35 +14,8 @@ module tb_topmodule;
     logic [7:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
     logic [9:0] LED;
 
-    logic [7:0] HEX0_DATA;
-
     // instance
     TopModule UUT(.*);
-
-    function [7:0] HEX_DATA(input [3:0] SW);
-    begin
-        case(SW)
-            4'h0:   HEX_DATA = 8'b11000000;
-            4'h1:   HEX_DATA = 8'b11111001;
-            4'h2:   HEX_DATA = 8'b10100100;
-            4'h3:   HEX_DATA = 8'b10110000;
-            4'h4:   HEX_DATA = 8'b10011001;
-            4'h5:   HEX_DATA = 8'b10010010;
-            4'h6:   HEX_DATA = 8'b10000010;
-            4'h7:   HEX_DATA = 8'b11111000;
-            4'h8:   HEX_DATA = 8'b10000000;
-            4'h9:   HEX_DATA = 8'b10011000;
-            4'hA:   HEX_DATA = 8'b10001000;
-            4'hB:   HEX_DATA = 8'b10000011;
-            4'hC:   HEX_DATA = 8'b10100111;
-            4'hD:   HEX_DATA = 8'b10100001;
-            4'hE:   HEX_DATA = 8'b10000110;
-            4'hF:   HEX_DATA = 8'b10001110;
-            default: HEX_DATA = 8'b11000000;
-        endcase
-    end
-    endfunction
-    assign HEX0_DATA[7:0] = HEX_DATA(SW[3:0]);
 
     
     `TEST_SUITE begin
@@ -48,7 +24,55 @@ module tb_topmodule;
             BTN = 2'b11;
             SW = 10'b0;
             repeat(10) @(posedge CLK1);
+            BTN[1] = 1'b0;
+            repeat(10) @(posedge CLK1);
+            BTN[1] = 1'b1;
             $display("Running test suite setup code");
         end
 
+        `TEST_CASE("test0_initial_status") begin
+            `CHECK_EQUAL(HEX0, 8'b11000000);
+            `CHECK_EQUAL(HEX1, 8'b11000000);
+            `CHECK_EQUAL(HEX2, 8'hff);
+            `CHECK_EQUAL(HEX3, 8'hff);
+            `CHECK_EQUAL(HEX4, 8'hff);
+            `CHECK_EQUAL(HEX5, 8'hff);
+            `CHECK_EQUAL(LED, 10'h0);
+            $display("test0 is expected to pass");
         end
+
+        `TEST_CASE("test1_push_and_countup") begin
+            for(int i=1; i<10; i++) begin
+                t_push_button0(P_ICLK_COUNT*2);
+                $display("[%0t] %0d time, LED[7:4] = %h, LED[3:0] = %h", $time, i, LED[7:4], LED[3:0]);
+                `CHECK_EQUAL(LED[3:0], i);
+                `CHECK_EQUAL(LED[7:4], 0);
+            end
+            $display("test1 is expected to pass");
+        end
+
+        //`TEST_CASE("test2_")
+
+    end
+
+    `WATCHDOG(100ms);
+
+    initial begin: gen_CLK1
+        CLK1 = 1'b0;
+        CLK2 = 1'b0;
+        forever #(P_CLK_PERIOD/2) begin
+            CLK1 = ~CLK1;
+            CLK2 = ~CLK2;
+        end
+    end
+
+    task t_push_button0(int interval);
+        $display("[%0t] push BTN0", $time);
+        BTN[0] = 1'b0;
+        repeat(interval) @(posedge CLK1);
+        $display("[%0t] release BTN0", $time);
+        BTN[0] = 1'b1;
+        repeat(interval) @(posedge CLK1);
+    endtask
+
+endmodule

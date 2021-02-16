@@ -24,6 +24,6 @@ lib.add_source_files(join(src_path, "*.v"))
 lib.add_source_files(join(tb_path, "*.sv"))
 lib.add_source_files(join(tb_path, "*.v"), allow_empty=True)
 
-vu.set_sim_option("modelsim.vsim_flags.gui", ["-msgmode both", "-displaymsgmode both"])
+#vu.set_sim_option("modelsim.vsim_flags.gui", ["-msgmode both", "-displaymsgmode both"])
 
 vu.main()

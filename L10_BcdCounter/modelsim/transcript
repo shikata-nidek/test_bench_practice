@@ -1,0 +1,4 @@
+# Compile of TopModule.v was successful.
+# Compile of BcdCounter.v was successful.
+# Compile of tb_topmodule.sv failed with 6 errors.
+# 3 compiles, 1 failed with 6 errors.

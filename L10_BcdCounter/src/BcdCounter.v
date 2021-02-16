@@ -69,7 +69,7 @@ module m_seven_segment(input [3:0] idat,output [7:0] odat);
 endmodule
 
 //チャタリング除去
-module m_chattering(input clk,input sw_in,output sw_out);
+module m_chattering(input clk,input sw_in,input rst,output sw_out);
 	reg [15:0] cnt;	//16bit counter
 	reg swreg;			//Switch Latch
 	wire iclk;			//1/65536 clock
@@ -77,8 +77,12 @@ module m_chattering(input clk,input sw_in,output sw_out);
 	assign sw_out=swreg;
 	
 	//16bit Counter
-	always @(posedge clk) begin
-		cnt=cnt+1;
+	always @(posedge clk or negedge rst) begin
+		if(~rst) begin
+			cnt = 16'b0;
+			swreg = 1'b1;
+		end else
+			cnt=cnt+1;
 	end
 	assign iclk=cnt[15];	//clock for chattering inhibit
 	
