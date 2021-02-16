@@ -42,16 +42,15 @@ module tb_topmodule;
         end
 
         `TEST_CASE("test1_push_and_countup") begin
-            for(int i=1; i<10; i++) begin
+            for(int i=1; i<20; i++) begin
                 t_push_button0(P_ICLK_COUNT);
                 $display("[%0t] %0d time, LED[7:4] = %h, LED[3:0] = %h", $time, i, LED[7:4], LED[3:0]);
-                `CHECK_EQUAL(LED[3:0], i);
-                `CHECK_EQUAL(LED[7:4], 0);
+                `CHECK_EQUAL(LED[3:0], i%10);
+                if((i%10)==0)
+                    `CHECK_EQUAL(LED[7:4], i/10);
             end
             $display("test1 is expected to pass");
         end
-
-        //`TEST_CASE("test2_")
 
     end
 
