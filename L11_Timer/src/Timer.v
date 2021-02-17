@@ -1,30 +1,34 @@
 //1/50000 PreScaler
-module m_prescale50000(input clk,output c_out);
+module m_prescale50000(input clk,input rst,output c_out);
 	reg [15:0] cnt;
 	wire wcout;
 	
 	assign wcout=(cnt==16'd49999) ? 1'b1 : 1'b0;
 	assign c_out=wcout;
 	
-	always @(posedge clk) begin
-		if(wcout==1'b1)
-			cnt=0;
+	always @(posedge clk or posedge rst) begin
+		if(rst)
+			cnt = 0;
+		else if(wcout==1'b1)
+			cnt = 0;
 		else
-			cnt=cnt+1;
+			cnt = cnt + 1;
 	end
 endmodule	
 	
 
 //1/100 PreScaler
-module m_prescale100(input clk,input c_in,output c_out);
+module m_prescale100(input clk,input c_in,input rst,output c_out);
 	reg [6:0] cnt;
 	wire wcout;
 	
 	assign wcout=(cnt==7'd99) ? 1'b1 : 1'b0;
 	assign c_out=(wcout & c_in);
 	
-	always @(posedge clk) begin
-		if(c_in==1'b1) begin
+	always @(posedge clk or posedge rst) begin
+		if(rst)
+			cnt = 0;
+		else if(c_in==1'b1) begin
 			if(wcout==1'b1)
 				cnt=0;
 			else
@@ -34,19 +38,21 @@ module m_prescale100(input clk,input c_in,output c_out);
 endmodule	
 
 //m_timer module
-module m_timer(input clk,output [9:0] sec);
+module m_timer(input clk,input rst,output [9:0] sec);
 
 	reg [3:0] dcnt;
 	wire [9:0] wsec;
 	wire c1,c2;	//Carry data
 	//1/50000 PreScaler
-	m_prescale50000 u0(clk,c1);
+	m_prescale50000 u0(clk,rst,c1);
 	//1/100 PreScaler
-	m_prescale100 u1(clk,c1,c2);
+	m_prescale100 u1(clk,rst,c1,c2);
 	
 	//decimal counter
-	always @(posedge clk) begin
-		if(c2==1'b1) begin
+	always @(posedge clk or posedge rst) begin
+		if(rst)
+			dcnt = 0;
+		else if(c2==1'b1) begin
 			if(dcnt==4'd9)
 				dcnt=0;
 			else
