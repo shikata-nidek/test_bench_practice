@@ -17,12 +17,8 @@ module TopModule(
 	input 		     [9:0]		SW
 
 	);
-	wire [9:0] wsec;
-	wire rst;
-	
-	assign rst = ~BTN[1];
-	m_timer m_timer(CLK1,rst,wsec);
-	assign LED=wsec;
+
+	assign LED=SW;
 	assign HEX0=8'hff;
 	assign HEX1=8'hff;
 	assign HEX2=8'hff;

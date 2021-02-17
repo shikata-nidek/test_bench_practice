@@ -18,7 +18,7 @@ endmodule
 	
 
 //1/100 PreScaler
-module m_prescale100(input clk,input c_in,input rst,output c_out);
+module m_prescale100(input clk,input rst,input c_in,output c_out);
 	reg [6:0] cnt;
 	wire wcout;
 	
