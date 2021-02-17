@@ -52,6 +52,19 @@ module tb_topmodule;
             $display("test1 is expected to pass");
         end
 
+        `TEST_CASE("test2_invalid_push") begin
+            // short push -> chattering
+            t_push_button0(P_ICLK_COUNT/3);
+            `CHECK_EQUAL(LED,'d0);
+            // long push
+            t_push_button0(P_ICLK_COUNT);
+            `CHECK_EQUAL(LED,'d1);
+            // short push
+            t_push_button0(P_ICLK_COUNT/4);
+            `CHECK_EQUAL(LED,'d1);
+
+        end
+
     end
 
     `WATCHDOG(100ms);
