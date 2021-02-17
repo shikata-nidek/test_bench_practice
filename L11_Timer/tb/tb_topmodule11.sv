@@ -52,7 +52,6 @@ module tb_topmodule;
             end
             diff = stop - start;
             $display("time for lighting = %0t", diff);
-            //$stop;
             `CHECK_EQUAL(diff, 10**8);
         end
 
