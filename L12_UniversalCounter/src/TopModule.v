@@ -26,8 +26,8 @@ module TopModule(
 	assign clk=~w_sw;
 	
 	m_chattering chattering(CLK1,BTN[0],w_sw);	//KEY0のチャタリングを除去
-	m_universal_counter #(7) counter7(clk,BTN[1],1'b1,c1,cnt0);	//8進カウンタ
-	m_universal_counter #(9) counter9(clk,BTN[1],c1,c2,cnt1);	//10進カウンタ
+	m_universal_counter #(7) counter8(clk,BTN[1],1'b1,c1,cnt0);	//8進カウンタ
+	m_universal_counter #(9) counter10(clk,BTN[1],c1,c2,cnt1);	//10進カウンタ
 	m_seven_segment seg_LED0(cnt0,led0);
 	m_seven_segment seg_LED1(cnt1,led1);
 	
