@@ -23,7 +23,7 @@ module m_universal_counter(input clk,input n_reset,input c_in,output c_out,outpu
 endmodule
 
 //チャタリング除去
-module m_chattering(input clk,input sw_in,output sw_out);
+module m_chattering(input clk,input rst,input sw_in,output sw_out);
 	reg [15:0] cnt;	//16bit counter
 	reg swreg;			//Switch Latch
 	wire iclk;			//1/65536 clock
@@ -31,8 +31,12 @@ module m_chattering(input clk,input sw_in,output sw_out);
 	assign sw_out=swreg;
 	
 	//16bit Counter
-	always @(posedge clk) begin
-		cnt=cnt+1;
+	always @(posedge clk or negedge rst) begin
+		if(rst==1'b0) begin
+			cnt = 0;
+			swreg = 1'b0;
+		end else
+			cnt=cnt+1;
 	end
 	assign iclk=cnt[15];	//clock for chattering inhibit
 	

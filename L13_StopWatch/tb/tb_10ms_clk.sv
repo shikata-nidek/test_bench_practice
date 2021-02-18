@@ -1,49 +1,39 @@
 `include "vunit_defines.svh"
 `timescale 1ns/1ns
 
-module tb_prescale50000;
+module tb_10ms_clk;
 
     parameter P_CLK_PERIOD = 20; // 50MHz
 
     // input
     logic clk;
     logic rst;
-
     // output
-    logic c_out;
-
+    logic clk10ms;
     // instance
-    m_prescale50000 prescale50000(.*);
+    m_10ms_clk clk_10ms(.*);
 
     `TEST_SUITE begin
         
         `TEST_SUITE_SETUP begin
-            rst = 1'b0;
-            repeat(10) @(posedge clk);
             rst = 1'b1;
             repeat(10) @(posedge clk);
             rst = 1'b0;
-            $display("Running test suite setup code");
+            repeat(10) @(posedge clk);
+            rst = 1'b1;
         end
 
-        `TEST_CASE("test0_initial_status") begin
-            `CHECK_EQUAL(c_out, 1'b0);
-        end
-
-        `TEST_CASE("test1_count50000") begin
+        `TEST_CASE("test1_check_10ms") begin
             int cnt_edge;
             cnt_edge = 0;
             @(posedge clk) cnt_edge++;
-            $display("counting...");
-            if(cnt_edge==50000) begin
-                `CHECK_EQUAL(c_out, 1'b1);
-                $display("check ok");
-            end
+
         end
+
 
     end
 
-    `WATCHDOG(1s);
+    `WATCHDOG(100ms);
 
     initial begin: gen_clk
         clk = 1'b0;
