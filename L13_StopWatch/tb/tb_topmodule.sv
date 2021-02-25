@@ -26,6 +26,7 @@ module tb_topmodule;
             BTN[1] = 1'b0;
             repeat(5) @(posedge CLK1);
             BTN[1] = 1'b1;
+            repeat(5) @(posedge CLK1);
         end
 
         `TEST_CASE("test0_initial_status") begin

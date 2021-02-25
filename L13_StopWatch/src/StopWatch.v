@@ -32,7 +32,7 @@ module m_stop_watch(
 	output [7:0] msec,	//BCD2桁の1/100秒
 	output run_led			//実行中の表示LED
 	);
-	reg r_run = 1'b0;
+	reg r_run;
 	wire [5:0] carry;
 	wire [7:0] w_min;
 	wire [7:0] w_sec;
@@ -42,8 +42,9 @@ module m_stop_watch(
 	assign min=w_min;
 	assign sec=w_sec;
 	assign msec=w_msec;
-	always @(posedge start_sw) begin
-		r_run=~r_run;
+	always @(posedge start_sw or negedge n_reset) begin
+		if(n_reset==1'b0) r_run = 0;
+		else r_run=~r_run;
 	end
 	
 	m_universal_counter #(9) counter0(clk,n_reset,r_run,carry[0],w_msec[3:0]);	 	//1/100sec
