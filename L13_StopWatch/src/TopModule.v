@@ -23,9 +23,9 @@ module TopModule(
 	wire [7:0] w_msec;
 	assign start_sw=~button;
 	
-	m_chattering u0(CLK1,BTN[1],BTN[0],button);
-	m_10ms_clk u1(CLK1,BTN[1],clk10ms);
-	m_stop_watch u2(clk10ms,start_sw,BTN[1],w_min,w_sec,w_msec,run_led);
+	m_chattering chattering(CLK1,BTN[1],BTN[0],button);
+	m_10ms_clk clk_10ms(CLK1,BTN[1],clk10ms);
+	m_stop_watch stop_watch(clk10ms,start_sw,BTN[1],w_min,w_sec,w_msec,run_led);
 	
 	assign LED={9'h0,run_led};
 	m_seven_segment #(1) h0(w_msec[3:0],HEX0);

@@ -26,7 +26,19 @@ module tb_10ms_clk;
         `TEST_CASE("test1_check_10ms") begin
             int cnt_edge;
             cnt_edge = 0;
-            @(posedge clk) cnt_edge++;
+            $display("[%0t] start", $time);
+            fork
+                begin: wait_10ms_clk
+                    @(posedge clk10ms);
+                end
+                begin: counting
+                    while(1) @(posedge clk) cnt_edge++;
+                end
+            join_any
+            `CHECK_EQUAL(cnt_edge, 5000000/P_CLK_PERIOD);
+            $display(cnt_edge);
+            disable counting;
+            
 
         end
 

@@ -32,7 +32,7 @@ module m_stop_watch(
 	output [7:0] msec,	//BCD2桁の1/100秒
 	output run_led			//実行中の表示LED
 	);
-	reg r_run;
+	reg r_run = 1'b0;
 	wire [5:0] carry;
 	wire [7:0] w_min;
 	wire [7:0] w_sec;
@@ -46,11 +46,11 @@ module m_stop_watch(
 		r_run=~r_run;
 	end
 	
-	m_universal_counter #(9) u0(clk,n_reset,r_run,carry[0],w_msec[3:0]);	 	//1/100sec
-	m_universal_counter #(9) u1(clk,n_reset,carry[0],carry[1],w_msec[7:4]);	//1/10sec
-	m_universal_counter #(9) u2(clk,n_reset,carry[1],carry[2],w_sec[3:0]);		//1sec
-	m_universal_counter #(5) u3(clk,n_reset,carry[2],carry[3],w_sec[7:4]);		//10sec
-	m_universal_counter #(9) u4(clk,n_reset,carry[3],carry[4],w_min[3:0]);		//1min
-	m_universal_counter #(5) u5(clk,n_reset,carry[4],carry[5],w_min[7:4]);		//10min
+	m_universal_counter #(9) counter0(clk,n_reset,r_run,carry[0],w_msec[3:0]);	 	//1/100sec
+	m_universal_counter #(9) counter1(clk,n_reset,carry[0],carry[1],w_msec[7:4]);	//1/10sec
+	m_universal_counter #(9) counter2(clk,n_reset,carry[1],carry[2],w_sec[3:0]);		//1sec
+	m_universal_counter #(5) counter3(clk,n_reset,carry[2],carry[3],w_sec[7:4]);		//10sec
+	m_universal_counter #(9) counter4(clk,n_reset,carry[3],carry[4],w_min[3:0]);		//1min
+	m_universal_counter #(5) counter5(clk,n_reset,carry[4],carry[5],w_min[7:4]);		//10min
 
 	endmodule
