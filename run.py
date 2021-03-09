@@ -20,7 +20,7 @@ tb_path = join(target_path, "tb/")
 
 lib = vu.add_library("lib")
 lib.add_source_files(join(src_path, "*.sv"), allow_empty=True)
-lib.add_source_files(join(src_path, "*.v"))
+lib.add_source_files(join(src_path, "*.v"), allow_empty=True)
 lib.add_source_files(join(tb_path, "*.sv"))
 lib.add_source_files(join(tb_path, "*.v"), allow_empty=True)
 
