@@ -1,7 +1,7 @@
 module TopModule(
     // input
     input logic           CLK1,
-    input logic           ClK2,
+    input logic           CLK2,
     input logic   [1:0]   BTN,
     input logic   [9:0]   SW,
     // output
